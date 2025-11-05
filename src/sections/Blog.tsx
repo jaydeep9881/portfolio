@@ -9,11 +9,15 @@ export default function Blog() {
       </section>
     );
   }
+
+  // Guard against undefined and ensure an array type for TypeScript
+  const posts = config.blog?.posts ?? [];
+
   return (
     <section id="blog" className="mt-16">
       <h2 className="text-2xl font-semibold">Blog</h2>
       <ul className="mt-4 grid gap-3">
-        {config.blog.posts.map((p: any) => (
+        {posts.map((p: any) => (
           <li key={p.slug} className="glass rounded-xl p-5">
             <a href={p.url} className="font-medium hover:underline">{p.title}</a>
             <p className="text-sm text-muted">{p.excerpt}</p>
@@ -23,5 +27,3 @@ export default function Blog() {
     </section>
   );
 }
-
-
