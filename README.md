@@ -53,24 +53,4 @@ src/
   data/
   assets/
 public/
-```
-
-## Accessibility & Performance
-- Semantic markup, keyboard navigable, visible focus rings
-- Lazy-loaded images
-- Minimal dependencies, small bundle via Vite
-- SEO and Open Graph meta tags in `index.html`
-
-## Deployment
-### Vercel (recommended)
-1. Push to GitHub
-2. Import repo in Vercel, select root
-3. Build command: `vite build` (default) | Output directory: `dist`
-4. Set `NODE_VERSION` to 18+ if needed
- 
-
-## Optional
-- To use light-only or system-only dark mode, change `darkMode` in `tailwind.config.js` or set initial theme in `App.tsx` state.
-- Blog posts can be wired by enabling `config.blog.enabled` and populating `posts`.
- 
- 
+  
