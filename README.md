@@ -67,11 +67,7 @@ public/
 2. Import repo in Vercel, select root
 3. Build command: `vite build` (default) | Output directory: `dist`
 4. Set `NODE_VERSION` to 18+ if needed
-
-### Netlify
-1. New site from Git
-2. Build command: `npm run build`
-3. Publish directory: `dist`
+ 
 
 ## Optional
 - To use light-only or system-only dark mode, change `darkMode` in `tailwind.config.js` or set initial theme in `App.tsx` state.
