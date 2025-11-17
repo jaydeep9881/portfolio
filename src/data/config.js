@@ -111,7 +111,7 @@ const config = {
     email: 'jaydeepc9881@gmail.com',
     linkedin: 'https://x.com/Jay_deepp',
     github: 'https://github.com/jaydeep9881',
-    resumeUrl: 'https://www.canva.com/design/DAGvgZ2EJJc/ZFX7BsCgYlxkm_5XO1S0kw/edit?utm_content=DAGvgZ2EJJc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+    resumeUrl: 'https://www.canva.com/design/DAGy8IRxP6U/kFywqV696XKUGcCg3wFlUQ/edit?utm_content=DAGy8IRxP6U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
   }
 };
 
