@@ -25,7 +25,6 @@ npm run preview
 
 # tests
 npm test
-
 # lint
 npm run lint
 ```
