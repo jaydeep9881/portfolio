@@ -12,6 +12,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-5xl font-bold"
+            
           >
             {h.name}
           </motion.h1>
