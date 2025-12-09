@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
- 
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Learning from './sections/Learning';
@@ -11,6 +10,8 @@ import Blog from './sections/Blog';
 import Contact from './sections/Contact';
 import config from './data/config';
 import Experience from './sections/Experience';
+import UniverseBackground from './components/UniverseBackground';
+
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const stored = localStorage.getItem('theme');
@@ -37,19 +38,22 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-background text-gray-900 dark:text-white">
-      <Header theme={theme} setTheme={setTheme} />
-      <main className="max-w-6xl mx-auto px-4 sm:px-6">
-        <Hero />
-        <Experience/>
-        <Skills />
-        <Projects />  
-        <Learning />
-        <About />
-        <Blog />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative min-h-screen bg-background/80 text-gray-900 dark:text-white backdrop-blur-[1px] overflow-hidden">
+      <UniverseBackground theme={theme} />
+      <div className="relative z-10">
+        <Header theme={theme} setTheme={setTheme} />
+        <main className="max-w-6xl mx-auto px-4 sm:px-6">
+          <Hero />
+          <Experience/>
+          <Skills />
+          <Projects />  
+          <Learning />
+          <About />
+          <Blog />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
