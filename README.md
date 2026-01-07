@@ -77,7 +77,6 @@ public/
 - To use light-only or system-only dark mode, change `darkMode` in `tailwind.config.js` or set initial theme in `App.tsx` state.
 - Blog posts can be wired by enabling `config.blog.enabled` and populating `posts`.
 
-## License
-MIT
+
 
 
